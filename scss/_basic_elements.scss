@@ -1,0 +1,32 @@
+/////////////////////////////////////////////////
+//                                             //
+//               Basic Elements                //
+//                                             //
+//     Simple element styling an body too      //
+//                                             //
+/////////////////////////////////////////////////
+
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+*{
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  position: fixed;
+  
+  width: 100%;
+  background: grey;
+  //shadow
+  height: 1.5em;
+}
+
+body {
+  background-color: $bgcolor;
+  color: #FFF;
+  font-size: $fontsize;
+}

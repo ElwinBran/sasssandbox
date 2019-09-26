@@ -1,0 +1,17 @@
+/////////////////////////////////////////////////
+//                                             //
+//                  Functions                  //
+//                                             //
+//        Site-wide mixins and functions       //
+//                                             //
+/////////////////////////////////////////////////
+
+
+///Provides a percentage of a given ratio.
+///Example: 1,10 returns '10%'.
+@function percentage_unit($numerator, $denominator){
+    $result: 100%;
+    $result: $result / $denominator;
+    $result: $result * $numerator;
+    @return $result;
+}

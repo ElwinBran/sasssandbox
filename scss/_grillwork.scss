@@ -1,0 +1,52 @@
+/////////////////////////////////////////////////
+//                                             //
+//                 GRILLWORK                   //
+//                                             //
+//              Grid like styling              //
+//                                             //
+/////////////////////////////////////////////////
+//Requires 
+
+
+@import '_functions';
+@import '_config_grillwork';
+
+
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+.grillwork{
+    width: 100%;
+    margin: 0 auto;
+}
+  
+.grillwork::before,
+.grillwork::after,
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+}
+  
+grillwork::after,
+row::after{
+    clear: both;
+}
+  
+[class*=col-]{
+    float: left;
+    min-height: 1px;
+}
+
+/* generated grillwork column classes  */
+@each $label , $screen_width in $responsitivity_values{
+    @media screen and (max-width:$screen_width){
+      @each $column_number in $grillwork_column_variants {
+        .col-#{$label}-#{$column_number} {
+          min-width: percentage_unit($column_number, $grillwork_columns);
+        }
+      }
+    }
+  }

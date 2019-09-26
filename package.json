@@ -1,0 +1,14 @@
+{
+  "name": "sandboxsass",
+  "version": "1.0.0",
+  "description": "Testing sass technologies and prototyping CSS framework",
+  "main": "index.js",
+  "scripts": {
+    "continuous-build": "node-sass -w scss -o css"
+  },
+  "author": "Elwin Slokker",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
