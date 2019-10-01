@@ -5,3 +5,55 @@
 //     Simple element styling an body too      //
 //                                             //
 /////////////////////////////////////////////////
+
+$flex-types: ("flex-direction": 
+    ("row": "direction--row", "row-reverse": "direction--row-reverse",
+     "column": "direction--col", "column-reverse": "direction--col"),
+              "flex-wrap": 
+    ("nowrap": "wrap--nowrap","wrap": "wrap--wrap",
+     "wrap-reverse": "wrap--reverse"),
+              "justify-content": 
+    ("flex-start": "justify-content--flex-start", 
+     "flex-end": "justify-content--flex-end", 
+     "start": "justify-content--start",
+     "safe": "justify-content--safe", 
+     "unsafe": "justify-content--unsafe",
+     "center": "justify-content--center",
+     "end": "justify-content--end",
+     "space-between": "justify-content--space-between",
+     "space-around": "justify-content--space-around",
+     "space-evenly": "justify-content--space-evenly",
+     "stretch": "justify-content--stretch"),
+              "align-items": 
+    ("baseline": "align-items--baseline", 
+     "first baseline": "align-items--first-baseline",
+     "last baseline": "align-items--last-baseline",
+     "safe": "align-items--safe",
+     "unsafe": "align-items--unsafe",
+     "center": "align-items--center",
+     "start": "align-items--start",
+     "end": "align-items--end",
+     "self-start": "align-items--self-start",
+     "self-end": "align-items--self-end",
+     "flex-start": "align-items--flex-start",
+     "flex-end": "align-items--flex-end"), 
+                "align-content": 
+    ("baseline": "align-content--baseline", 
+     "first baseline": "align-content--first-baseline",
+     "last baseline": "align-content--last-baseline",
+     "space-between": "align-content--space-between",
+     "space-around": "align-content--space-around",
+     "space-evenly": "align-content--space-evenly",
+     "stretch": "align-content--stretch",
+     "safe": "align-content--safe",
+     "unsafe": "align-content--unsafe",
+     "center": "align-content--center",
+     "start": "align-content--start",
+     "end": "align-content--end",
+     "flex-start": "align-content--flex-start",
+     "flex-end": "align-content--flex-end"));
+     
+$align-self-values: ("auto": "align-self--auto",
+ "flex-start": "align-self--flex-start", "flex-end": "align-self--flex-end",
+ "center": "align-self--center", "baseline": "align-self--baseline", 
+ "stretch": "align-self--stretch");

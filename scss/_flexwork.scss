@@ -8,10 +8,21 @@
 
 @import '_config_flexwork';
 
-flex-container{
+
+flexwork{
     display: flex;
 }
 
-flex-container--{
-    display: flex;
+@each $property, $values in $flex-types {
+    @each $value, $class-name in $values{
+        .#{$class-name}{
+            #{$property}: #{$value}; 
+        }
+    }
+}
+
+@each $value, $class-name in $align-self-values{
+    .#{$class-name}{
+        align-self: #{$value};
+    }
 }
